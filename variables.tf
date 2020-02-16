@@ -19,6 +19,12 @@ variable "region_list" {
   default = ["us-east-1a", "us-east-1b"]
 }
 
+variable "security_group_ids" {
+  type = list(string)
+  description = "Security group IDs"
+  default = ["sg-4f713c35", "sg-4f713c35", "sg-4f713c35"]
+}
+
 variable "ami" {
   type = map(string)
   default = {
